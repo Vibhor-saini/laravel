@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    Hi Dude
+   <h1 style="text-align: center;">Hello Dude</h1>
 </body>
 </html>
