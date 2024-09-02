@@ -45,10 +45,10 @@ class Eloquent_ORM extends Controller
         // }
 
 
-        //$party = Party::where('city', 'Saharanpur')->get(); // Retrieve all records where the city is 'Saharanpur'
-        //$party = Party::get(); // Retrieve all records
-        // Display the data
-        //dd($party);
+        $party = Party::where('city', 'Saharanpur')->get(); // Retrieve all records where the city is 'Saharanpur'
+        $party = Party::get(); // Retrieve all records
+        //Display the data
+        dd($party);
 
         //     $party = Party::select('name', 'email')->get(); //You can specify which columns to retrieve using select():
         //     // Loop through and display the data
