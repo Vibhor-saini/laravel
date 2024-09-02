@@ -7,10 +7,10 @@
 </head>
 <body>
     <h1 style="text-align: center;">{{$message}} this is welcome page</h1>
-
     @foreach($items as $item)
     {{$item}}</br>
     @endforeach
+
 </body>
 </html>
 

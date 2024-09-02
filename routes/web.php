@@ -1,10 +1,11 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
+//use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\Eloquent_ORM;
 
 
 // Route::get('/', function () {
@@ -24,6 +25,6 @@ use App\Http\Controllers\AboutController;
 // require __DIR__.'/auth.php';
 
 Route::get('/', [WelcomeController::class, 'index']);
-//Route::get('/about/{para}', [MyController::class, 'about']);
 Route::get('/about/{para?}', [AboutController::class, 'about']);
 Route::get('/service', [ServiceController::class, 'service']);
+Route::get('/orm', [Eloquent_ORM::class, 'ORM']);
